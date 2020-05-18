@@ -9,6 +9,7 @@ module.exports={
         rules:[
             {
                 test: /\.js$/,
+                exclude: /node_modules/,
                 loaders:[
                     {
                         loader: 'babel-loader',
@@ -19,6 +20,20 @@ module.exports={
                     }
                 ]
                 
+            },
+            {
+                test: /\.module\.css/,
+                loaders:[
+                    {
+                        loader: 'style-loader'
+                    },
+                    {
+                        loader: 'css-loader',
+                        options:{
+                            modules:true,
+                        }
+                    }
+                ]
             }
         ]
     }
