@@ -4,5 +4,22 @@ module.exports={
     output:{
         path: __dirname + "/build/",
         filename: "bundle.js"
+    },
+    module:{
+        rules:[
+            {
+                test: /\.js$/,
+                loaders:[
+                    {
+                        loader: 'babel-loader',
+                        options:
+                        {
+                            babelrc: true
+                        }
+                    }
+                ]
+                
+            }
+        ]
     }
 }
