@@ -1,0 +1,11 @@
+.root{
+    color: black;
+    font-family:  Helvetica, Arial, sans-serif;
+    border: 2px red dotted;
+}
+.title{
+    font-size: 3rem;
+}
+.subtitle{
+    font-size: 2rem;
+}
