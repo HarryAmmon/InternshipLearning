@@ -1,0 +1,12 @@
+.root{
+    border: 2px blue dotted;
+    background-image: url(../images/appImage.jpg);
+}
+
+.root h1{
+    font-size: 3rem;
+}
+
+.subtitle{
+    font-size: 2rem;
+}
