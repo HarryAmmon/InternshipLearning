@@ -1,9 +1,12 @@
+const path = require('path');
+
 module.exports={
     mode:'development',
     entry:"./src/index.js",
     output:{
-        path: __dirname + "/build/",
-        filename: "bundle.js"
+        path: path.resolve(__dirname, 'build'),
+        filename: "bundle.js",
+        // publicPath: "/assets/"
     },
     module:{
         rules:[
@@ -33,6 +36,17 @@ module.exports={
                             modules:true,
                         }
                     }
+                ]
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                loaders:[
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            outputPath: 'images'
+                        }
+                    },
                 ]
             }
         ]
