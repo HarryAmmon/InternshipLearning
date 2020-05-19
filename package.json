@@ -20,6 +20,6 @@
   },
   "scripts": {
     "build": "webpack",
-    "start": "webpack && start index.html"
+    "start": "webpack && start build/index.html"
   }
 }
