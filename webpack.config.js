@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports={
@@ -55,5 +56,11 @@ module.exports={
                 ]
             }
         ]
-    }
+    },
+    plugins:[
+        new HtmlWebpackPlugin({
+            inject: true,
+            template: path.resolve('./index.html'),
+        })
+    ]
 }
