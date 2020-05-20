@@ -12,7 +12,7 @@ module.exports={
     devServer: {
         hot: true,
         port: 3000,
-        publicPath: '/build/'
+        publicPath: '/'
     },
     module:{
         rules:[
