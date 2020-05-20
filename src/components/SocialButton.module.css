@@ -1,0 +1,7 @@
+.root{
+    border: 2px solid blue;
+    display: inline-block;
+    background-color: gray;
+    padding: 10px;
+    margin: 5px;    
+}
