@@ -4,14 +4,12 @@ import Styles from './SocialButton.module.css';
 
 export default function SocialButton(props){
     return(
-        <div>
-            
+        <div>           
             <a target="_blank" href={props.url}>
                 <button className={Styles.root}>
                     <FontAwesomeIcon icon={props.icon} />
                 </button>
             </a>
-            
         </div>
     );
 }
