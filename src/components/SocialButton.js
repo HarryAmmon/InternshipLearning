@@ -1,19 +1,17 @@
-import React from 'React';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-export default class SocialButton extends React.Component{
-    constructor(props){
-        super(props);
-    }
+import Styles from './SocialButton.module.css';
 
-    render(){
-        return(
-            <div>
-                <button>
-                    <a href={this.props.url}>
-                        <FontAwesomeIcon icon={this.props.icon} />
-                    </a>
+export default function SocialButton(props){
+    return(
+        <div>
+            
+            <a target="_blank" href={props.url}>
+                <button className={Styles.root}>
+                    <FontAwesomeIcon icon={props.icon} />
                 </button>
-            </div>
-        );
-    }
+            </a>
+            
+        </div>
+    );
 }
