@@ -1,14 +1,8 @@
 import React from 'react';
 
-export default class Copyright extends React.Component{
-    constructor(props){
-        super(props);
+export default function Copyright(props){
+    return(
+        <small>
+            © {props.year} Harry Ammon
+        </small>);
     }
-
-    render(){
-        return(
-            <small>
-                © {this.props.year} Harry Ammon
-            </small>);
-    }
-}
