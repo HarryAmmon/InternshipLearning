@@ -6,7 +6,12 @@ module.exports={
     output:{
         path: path.resolve(__dirname, 'build'),
         filename: "bundle.js",
-        // publicPath: "/assets/"
+        publicPath: "/build/"
+    },
+    devServer: {
+        hot: true,
+        port: 3000,
+        publicPath: '/build/'
     },
     module:{
         rules:[
