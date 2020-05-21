@@ -1,16 +1,23 @@
 import React from 'react';
 import Styles from './App.module.css';
-import Footer from './Footer.js';
-import Header from './Header.js';
-import AboutMe from './AboutMe.js';
+import { Route, Switch } from 'react-router-dom';
+import Home  from "../views/Home.js";
+import DocumentManagement from '../views/DocumentManagement.js';
+import FrontEnd from "../views/FrontEnd.js";
+import DotNetCore from "../views/DotNetCorePage.js"
+import NotFound from '../views/NotFound';
+import Footer from '../components/Footer.js';
 
 export default function App(){
     return(
-        <div className={Styles.root}>
-            <Header />
-            <main>
-            <AboutMe />                
-            </main>
+        <div>        
+            <Switch>
+                <Route path="/" exact component={Home}/>
+                <Route path="/DocMan" component={DocumentManagement}/>
+                <Route path="/FrontEnd" component={FrontEnd}/>
+                <Route path="/DotNetCore" component={DotNetCore}/>
+                <Route component={NotFound} />    
+            </Switch>
             <Footer />
         </div>
     );
