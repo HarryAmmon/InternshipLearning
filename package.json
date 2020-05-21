@@ -26,7 +26,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "webpack && cp ./_redirects ./build/_redirects",
     "start": "webpack && start build/index.html",
     "server": "webpack-dev-server --open"
   }
