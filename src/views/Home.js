@@ -5,9 +5,7 @@ import AboutMe from '../components/AboutMe.js';
 const Home = _ =>(
     <div className="homePage">
         <Header/>
-        <main>
-            <AboutMe />                
-        </main>
+        <AboutMe />                
     </div>
 );
 
