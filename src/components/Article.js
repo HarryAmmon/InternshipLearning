@@ -9,7 +9,7 @@ export default function Article(props){
                 <h3 className={Styles.subTitle}>{props.subTitle}</h3>
             </header>
             <main>
-                {props.paragraphs.map(paragraph => <p>{paragraph}</p>)}
+                {props.paragraphs.map(paragraph => <p key={paragraph.length}>{paragraph}</p>)}
             </main>
         </article>
     );
