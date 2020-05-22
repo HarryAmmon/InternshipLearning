@@ -1,5 +1,9 @@
 import React from 'react';
 
-const FrontEnd = _ => <h1>FrontEndPage :)</h1>;
+const FrontEnd = _ => (
+    <div className="frontEndPage">
+        <h1>FrontEndPage :)</h1>
+    </div>
+);
 
 export default FrontEnd
