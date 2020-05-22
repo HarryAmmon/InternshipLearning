@@ -6,11 +6,13 @@ import DocumentManagement from '../views/DocumentManagement.js';
 import FrontEnd from "../views/FrontEnd.js";
 import DotNetCore from "../views/DotNetCorePage.js"
 import NotFound from '../views/NotFound';
-import Footer from '../components/Footer.js';
+import NavBar from './NavBar';
+import Footer from '../components/SiteFooter';
 
 export default function App(){
     return(
-        <div>        
+        <div className={Styles.root}>
+            <NavBar />        
             <Switch>
                 <Route path="/" exact component={Home}/>
                 <Route path="/DocMan" component={DocumentManagement}/>
