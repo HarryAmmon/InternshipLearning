@@ -26,7 +26,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "build": "webpack && cp ./_redirects ./build/_redirects",
+    "build": "webpack && cp ./_redirects ./build/_redirects && cp ./sitemap.xml ./build/sitemap.xml",
     "s": "webpack-dev-server",
     "so": "webpack-dev-server --open"
   }
