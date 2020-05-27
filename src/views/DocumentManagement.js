@@ -2,6 +2,7 @@ import React from 'react';
 import PageHeader from '../components/PageHeader.js';
 import BackgroundImage from '../images/DocManHeaderImage.jpg';
 import Article from '../components/Article.js';
+import NavBar from '../components/NavBar.js';
 
 const DocumentManagement = _ => (
     <div className="DocManPage">
@@ -10,6 +11,8 @@ const DocumentManagement = _ => (
             subTitle ="A lesson in refactoring"
             backgroundImage = {BackgroundImage}
         />
+        <hr/>
+        <NavBar/>
         <Article
             title="Planning Day"
             subTitle="A sense of scale"
