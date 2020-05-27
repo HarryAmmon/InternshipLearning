@@ -1,7 +1,12 @@
 .root{
-    border: 2px solid blue;
+    /* border: 2px solid blue;
     display: inline-block;
     background-color: gray;
     padding: 10px;
-    margin: 5px;    
+    margin: 5px;     */
+}
+
+.root{
+    text-decoration: underline dotted #FFFFFF 0.24rem;
+    margin : 10px;
 }
