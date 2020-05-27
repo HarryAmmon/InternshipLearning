@@ -1,3 +1,18 @@
-.root{
-    display: flex;   
+hr{
+    border: 2px solid #59A7BA;
+    margin: 0;
+}
+
+.footerContent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2E383B;
+    padding: 2rem;
+    color: #FFFFFF
+}
+
+.socialMedia{
+    display: flex;
+    justify-content: space-around;
 }

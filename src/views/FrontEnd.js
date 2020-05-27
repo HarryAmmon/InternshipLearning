@@ -2,6 +2,7 @@ import React from 'react';
 import PageHeader from '../components/PageHeader';
 import backgroundImage from '../images/FrontEndHeaderImage.jpg';
 import Article from '../components/Article.js'
+import NavBar from '../components/NavBar';
 
 const FrontEnd = _ => (
     <div className="frontEndPage">
@@ -10,6 +11,8 @@ const FrontEnd = _ => (
             subTitle="JavaScript, React & CSS"
             backgroundImage={backgroundImage}
         />
+        <hr/>
+        <NavBar/>
         <Article
             title="Starting from scratch"
             subTitle="An intro to HTML & CSS"

@@ -11,8 +11,7 @@ import Footer from '../components/SiteFooter';
 
 export default function App(){
     return(
-        <div className={Styles.root}>
-            <NavBar />        
+        <div className={Styles.root}>       
             <Switch>
                 <Route path="/" exact component={Home}/>
                 <Route path="/DocMan" component={DocumentManagement}/>
