@@ -1,5 +1,4 @@
 import React from 'react';
-import Styles from './AboutMe.module.css';
 import Article from './Article.js';
 
 export default function AboutMe(){

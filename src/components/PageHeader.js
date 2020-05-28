@@ -1,5 +1,5 @@
 import React from 'react';
-import Styles from './PageHeader.module.css';
+import Styles from './PageHeader.module.scss';
 
 export default function PageHeader(props){
     return(

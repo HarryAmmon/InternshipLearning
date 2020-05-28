@@ -1,5 +1,7 @@
+@use '_colorPalette' as colors;
+
 .root{
-    background-color: grey;
+    background-color: colors.$primary-color;
     background-image: url(../images/headerBackground.jpg);
     height: 100vh;
     width: 100%;
@@ -10,7 +12,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    color: white;
+    color: colors.$white;
 }
 
 .root h1{

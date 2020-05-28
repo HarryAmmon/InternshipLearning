@@ -1,5 +1,7 @@
+@use 'colorPalette' as colors;
+
 .root{
-    color: black;
+    color: colors.$black;
     font-family:  Helvetica, Arial, sans-serif;
 }
 
