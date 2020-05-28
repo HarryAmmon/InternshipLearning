@@ -1,3 +1,5 @@
+@use 'colorPalette' as colors;
+
 .root{
     height: 15vh;
     display: flex;
@@ -9,12 +11,11 @@
 }
 
 .title{
-    color: white;
+    color: colors.$white;
     size: 3rem;
 }
 
 .subTitle{
-    color: white;
+    color: colors.$white;
     size: 2rem;
-
 }

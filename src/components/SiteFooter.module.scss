@@ -1,5 +1,7 @@
+@use '_colorPalette';
+
 hr{
-    border: 2px solid #59A7BA;
+    border: 2px solid colorPalette.$tertiary-color;
     margin: 0;
 }
 
@@ -7,9 +9,9 @@ hr{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #2E383B;
+    background-color: colorPalette.$quaternary-color;
     padding: 2rem;
-    color: #FFFFFF
+    color: colorPalette.$white
 }
 
 .socialMedia{

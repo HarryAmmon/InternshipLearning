@@ -1,5 +1,7 @@
+@use 'colorPalette' as colors;
+
 .root{
-    color: #2e383b;
+    color: colors.$quaternary-color;
     z-index: 10;
     display: flex;
     text-decoration: none;
