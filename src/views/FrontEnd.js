@@ -1,18 +1,16 @@
 import React from 'react';
 import PageHeader from '../components/PageHeader';
-import backgroundImage from '../images/FrontEndHeaderImage.jpg';
+import BackgroundImage from '../images/FrontEndHeaderImage.jpg';
 import Article from '../components/Article.js'
 import NavBar from '../components/NavBar';
 
-const FrontEnd = _ => (
+const FrontEnd = props => (
+    
     <div className="frontEndPage">
-        <PageHeader 
-            title="Front End"
-            subTitle="JavaScript, React & CSS"
-            backgroundImage={backgroundImage}
-        />
-        <hr/>
-        <NavBar/>
+        {console.log("frontend props: ", props)}
+        <PageHeader backgroundImage = {BackgroundImage} toggleNavBar={props.toggleNavBar} displayNav={props.displayNav} hideNavBar={props.hideNavBar}/>    
+        <h1>Front-end</h1>
+        <h2>JavaScript, CSS & React</h2>
         <Article
             title="Starting from scratch"
             subTitle="An intro to HTML & CSS"

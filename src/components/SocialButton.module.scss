@@ -1,0 +1,6 @@
+@use 'colorPalette' as colors;
+
+.root{
+    text-decoration: underline dotted colors.$white 0.24rem;
+    margin : 10px;
+}

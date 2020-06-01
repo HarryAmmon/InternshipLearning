@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from '../components/SiteHeader.js';
 import AboutMe from '../components/AboutMe.js';
-import NavBar from '../components/NavBar.js';
 
-const Home = _ =>(
+const Home = props =>(
+    
     <div className="homePage">
-        <Header/>
-        <NavBar/>
+    {console.log("home props: ", props)}
+        <Header toggleNavBar={props.toggleNavBar} displayNav={props.displayNav} hideNavBar={props.hideNavBar}/>
         <div id="content">
             <AboutMe />
         </div>
