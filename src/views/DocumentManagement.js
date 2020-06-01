@@ -4,15 +4,12 @@ import BackgroundImage from '../images/DocManHeaderImage.jpg';
 import Article from '../components/Article.js';
 import NavBar from '../components/NavBar.js';
 
-const DocumentManagement = _ => (
+const DocumentManagement = props => (
     <div className="DocManPage">
-        <PageHeader
-            title = "DocMan"
-            subTitle ="A lesson in refactoring"
-            backgroundImage = {BackgroundImage}
-        />
+        <PageHeader backgroundImage = {BackgroundImage} toggleNavBar={props.toggleNavBar} displayNav={props.displayNav} hideNavBar={props.hideNavBar}/>
         <hr/>
-        <NavBar/>
+        <h1>DocMan</h1>
+        <h2>A lesson in refactoring</h2>
         <Article
             title="Planning Day"
             subTitle="A sense of scale"

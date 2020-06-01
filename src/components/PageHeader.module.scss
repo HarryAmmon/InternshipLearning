@@ -4,18 +4,20 @@
     height: 15vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .title{
+    align-self: center;
     color: colors.$white;
     size: 3rem;
+    margin: 0;
 }
 
 .subTitle{
+    align-self: center;
     color: colors.$white;
     size: 2rem;
 }

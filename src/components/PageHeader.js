@@ -1,14 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Styles from './PageHeader.module.scss';
+import ShowNavBarButton from './ShowNavBarButton';
+import NavBar from './NavBar';
 
 export default function PageHeader(props){
+    console.log("PageHeaderProps", props);
     return(
-        <div 
-            className={Styles.root} 
-            style={{ backgroundImage: `url(${props.backgroundImage})`}}
-        >
-            <h1 className={Styles.title}>{props.title}</h1>
-            <h2 className={Styles.subTitle}>{props.subTitle}</h2>
+        <div>
+            <div 
+                className={Styles.root} 
+                style={{ backgroundImage: `url(${props.backgroundImage})`}}
+            >
+                <ShowNavBarButton onClick={props.toggleNavBar}/>
+            </div>
+            <hr/>
+            <NavBar display={props.displayNav} hideNavBar={props.hideNavBar} />         
         </div>
     );
 }

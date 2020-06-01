@@ -1,9 +1,7 @@
 import React from 'react';
-
-const doThisThing = _ => alert("This is an alert!");
-
-const ShowNavBarButton = _ => (
-    <button onClick={doThisThing}> click me</button>
+import Styles from './ShowNavBarButton.module.scss'
+const ShowNavBarButton = props => (
+    <button className = {Styles.root} onClick={props.onClick}>Menu</button>
 )
 
 export default ShowNavBarButton;

@@ -1,6 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Styles from './SocialButton.module.css';
+import Styles from './SocialButton.module.scss';
 
 export default function SocialButton(props){
     return(        
