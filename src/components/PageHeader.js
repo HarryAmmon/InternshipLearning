@@ -4,7 +4,6 @@ import ShowNavBarButton from './ShowNavBarButton';
 import NavBar from './NavBar';
 
 export default function PageHeader(props){
-    console.log("PageHeaderProps", props);
     return(
         <div>
             <div 

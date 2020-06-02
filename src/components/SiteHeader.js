@@ -3,9 +3,7 @@ import Styles from './SiteHeader.module.scss';
 import ShowNavBarButton from './ShowNavBarButton';
 import NavBar from './NavBar';
 
-
 export default function Header(props){
-    console.log("SiteHeaderProps",props)
     return(
         <div>
         <header className={Styles.root}>
