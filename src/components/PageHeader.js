@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Styles from './PageHeader.module.scss';
-import ShowNavBarButton from './ShowNavBarButton';
+import MenuButton from './MenuButton';
 import NavBar from './NavBar';
 
 export default function PageHeader(props){
@@ -10,7 +10,7 @@ export default function PageHeader(props){
                 className={Styles.root} 
                 style={{ backgroundImage: `url(${props.backgroundImage})`}}
             >
-                <ShowNavBarButton onClick={props.toggleNavBar}/>
+                <MenuButton onClick={props.toggleNavBar}/>
             </div>
             <hr/>
             <NavBar display={props.displayNav} hideNavBar={props.hideNavBar} />         

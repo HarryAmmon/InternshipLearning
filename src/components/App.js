@@ -7,8 +7,6 @@ import FrontEnd from "../views/FrontEnd.js";
 import DotNetCore from "../views/DotNetCorePage.js"
 import NotFound from '../views/NotFound';
 import Footer from '../components/SiteFooter';
-import ShowNavBarButton from './ShowNavBarButton';
-import NavBar from './NavBar';
 
 export default function App(){
     const [showNavBar, setShowNavBar] = useState(false);
