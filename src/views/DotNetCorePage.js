@@ -7,6 +7,7 @@ export default function DotNetCorePage(props){
     return(
     <div className="DotNetCorePage">
         <PageHeader backgroundImage = {BackgroundImage} toggleNavBar={props.toggleNavBar} displayNav={props.displayNav} hideNavBar={props.hideNavBar}/>
+        <hr/>
         <h1>DotNetCorePage</h1>
         <h2>Back to basics</h2>
         <Card>

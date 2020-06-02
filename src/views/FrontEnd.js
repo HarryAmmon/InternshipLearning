@@ -5,9 +5,9 @@ import Card from '../components/Card.js'
 
 
 const FrontEnd = props => (
-    
     <div className="frontEndPage">
         <PageHeader backgroundImage = {BackgroundImage} toggleNavBar={props.toggleNavBar} displayNav={props.displayNav} hideNavBar={props.hideNavBar}/>    
+        <hr/>
         <h1>Front-end</h1>
         <h2>JavaScript, CSS & React</h2>
         <Card>
