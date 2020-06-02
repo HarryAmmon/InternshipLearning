@@ -4,13 +4,7 @@ import Styles from './Card.module.scss';
 export default function Card(props){
     return(
         <article className={Styles.root}>
-            <header>
-                <h2 className={Styles.title}>{props.title}</h2>
-                <h3 className={Styles.subTitle}>{props.subTitle}</h3>
-            </header>
-            <main>
-                {props.paragraphs.map(paragraph => <p key={paragraph.length}>{paragraph}</p>)}
-            </main>
+            {props.children}
         </article>
     );
 }
