@@ -1,23 +1,26 @@
 @use 'colorPalette' as colors;
 
 .root{
-    height: 15vh;
+    
+    height: 12rem;
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin-right: 3rem;
 }
 
 .title{
-    align-self: center;
+    align-self: flex-end;
     color: colors.$white;
     size: 3rem;
-    margin: 0;
+    margin: 0.8rem 0;
 }
 
 .subTitle{
-    align-self: center;
+    align-self: flex-end;
     color: colors.$white;
     size: 2rem;
+    margin: 0.8rem 0;
 }

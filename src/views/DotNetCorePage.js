@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import PageHeader from '../components/PageHeader';
-import BackgroundImage from '../images/DotNetPageHeader.jpg'
 import Card from '../components/Card.js';
 
 export default function DotNetCorePage(props){
     return(
     <div className="DotNetCorePage">
-        <PageHeader backgroundImage = {BackgroundImage} toggleNavBar={props.toggleNavBar} displayNav={props.displayNav} hideNavBar={props.hideNavBar}/>
-        <h1>DotNetCorePage</h1>
-        <h2>Back to basics</h2>
+        <PageHeader title=".NET Core" subTitle="Back to basics" toggleNavBar={props.toggleNavBar} displayNav={props.displayNav} hideNavBar={props.hideNavBar}/>
+        <hr/>
         <Card>
             <h1>An intro to .NET Core</h1>
             <p>talking about .NET Core</p><p>say about what different to .NET Framework</p>
