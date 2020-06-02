@@ -1,9 +1,9 @@
 import React from 'react';
-import Article from './Article.js';
+import Card from './Card.js';
 
 export default function AboutMe(){
     return(
-        <Article 
+        <Card 
             title="About Me!"
             subTitle="👋"
             paragraphs={[

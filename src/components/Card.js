@@ -1,7 +1,7 @@
 import React from 'react';
-import Styles from './Article.module.scss';
+import Styles from './Card.module.scss';
 
-export default function Article(props){
+export default function Card(props){
     return(
         <article className={Styles.root}>
             <header>
