@@ -1,8 +1,7 @@
 import React from 'react';
 import PageHeader from '../components/PageHeader.js';
 import BackgroundImage from '../images/DocManHeaderImage.jpg';
-import Article from '../components/Article.js';
-import NavBar from '../components/NavBar.js';
+import Card from '../components/Card.js';
 
 const DocumentManagement = props => (
     <div className="DocManPage">
@@ -10,24 +9,24 @@ const DocumentManagement = props => (
         <hr/>
         <h1>DocMan</h1>
         <h2>A lesson in refactoring</h2>
-        <Article
-            title="Planning Day"
-            subTitle="A sense of scale"
-            paragraphs={['some text','some different text']}
-        />
-        <Article
-            title="SharePoint oAuth"
-            paragraphs={['some more text','writing about the planning day']}
-        /> 
-        <Article
-            title="Creating PoCs"
-            paragraphs={['writing about proof of concepts']}
-        />
-        <Article
-            title="Ways of working"
-            subTitle="Agile & Azure DevOps"
-            paragraphs={['writing about agile','sprint planning','tracking tasks','daily scrum']}
-        />
+        <Card>
+            <h1>Planning Day</h1>
+            <h2>A sense of scale</h2>
+            <p>some text</p><p>some different text</p>
+        </Card>
+        <Card>
+            <h1>SharePoint oAuth</h1>
+            <p>some more text</p><p>writing about the planning day</p>
+        </Card>
+        <Card>
+            <h1>Creating PoCs</h1>
+            <p>writing about proof of concepts</p>
+        </Card>
+        <Card>
+            <h1>Ways of working</h1>
+            <h2>Agile & Azure DevOps</h2>
+            <p>writing about agile</p><p>sprint planning','tracking tasks</p><p>daily scrum</p>
+        </Card>
     </div>
 );
 
