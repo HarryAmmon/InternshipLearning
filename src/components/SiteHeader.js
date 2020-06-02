@@ -12,7 +12,6 @@ export default function Header(props){
                 <h1>Internship Learning</h1>
                 <p className={Styles.subtitle}>Documenting my learning journey</p>
             </div>
-            <a href="#content">#</a>
         </header>
         <hr/>
         <NavBar display={props.displayNav} hideNavBar={props.hideNavBar} />

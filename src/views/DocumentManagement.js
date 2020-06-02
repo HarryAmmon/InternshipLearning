@@ -1,14 +1,11 @@
 import React from 'react';
 import PageHeader from '../components/PageHeader.js';
-import BackgroundImage from '../images/DocManHeaderImage.jpg';
 import Card from '../components/Card.js';
 
 const DocumentManagement = props => (
     <div className="DocManPage">
-        <PageHeader backgroundImage = {BackgroundImage} toggleNavBar={props.toggleNavBar} displayNav={props.displayNav} hideNavBar={props.hideNavBar}/>
+        <PageHeader title="DocMan" subTitle="A lesson in refactoring" toggleNavBar={props.toggleNavBar} displayNav={props.displayNav} hideNavBar={props.hideNavBar}/>
         <hr/>
-        <h1>DocMan</h1>
-        <h2>A lesson in refactoring</h2>
         <Card>
             <h1>Planning Day</h1>
             <h2>A sense of scale</h2>
