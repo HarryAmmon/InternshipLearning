@@ -1,12 +1,12 @@
 import React, {useState } from 'react';
 import Styles from './App.module.scss';
 import { Route, Switch } from 'react-router-dom';
-import Home  from "../views/Home.js";
-import DocumentManagement from '../views/DocumentManagement.js';
-import FrontEnd from "../views/FrontEnd.js";
-import DotNetCore from "../views/DotNetCorePage.js"
-import NotFound from '../views/NotFound';
-import Footer from '../components/SiteFooter';
+import Home  from "../views/Home.jsx";
+import DocumentManagement from '../views/DocumentManagement.jsx';
+import FrontEnd from "../views/FrontEnd.jsx";
+import DotNetCore from "../views/DotNetCorePage.jsx"
+import NotFound from '../views/NotFound.jsx';
+import Footer from './SiteFooter.jsx';
 
 export default function App(){
     const [showNavBar, setShowNavBar] = useState(false);
@@ -21,7 +21,7 @@ export default function App(){
     }
 
     return(
-        <div className={Styles.root}>     
+        <div className={Styles.root} >     
             <Switch>
                 <Route path="/" exact component={() => <Home toggleNavBar={ToggleNavBar} displayNav={showNavBar} hideNavBar={HideNavbar}/>} />
                 <Route path="/DocMan" component={() => <DocumentManagement toggleNavBar={ToggleNavBar} displayNav={showNavBar} hideNavBar={HideNavbar}/>} />

@@ -1,8 +1,8 @@
 import React from 'react';
-import PageHeader from '../components/PageHeader';
-import Card from '../components/Card.js';
+import PageHeader from '../components/PageHeader.jsx';
+import Card from '../components/Card.jsx';
 import Styles from './Content.module.scss';
-import Article from '../components/Article';
+import Article from '../components/Article.jsx';
 
 const FrontEnd = props => (
     <div className="frontEndPage">

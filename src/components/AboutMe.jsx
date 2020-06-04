@@ -1,7 +1,7 @@
 import React from 'react';
-import Card from './Card.js';
-import NextPage from './NextPage.js';
-import Article from './Article.js';
+import Card from './Card.jsx';
+import NextPage from './NextPage.jsx';
+import Article from './Article.jsx';
 
 export default function AboutMe(){
     return( 

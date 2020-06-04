@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import PageHeader from '../components/PageHeader';
-import Card from '../components/Card.js';
+import PageHeader from '../components/PageHeader.jsx';
+import Card from '../components/Card.jsx';
 import Styles from './Content.module.scss';
-import Article from '../components/Article.js';
-import NextPage from '../components/NextPage';
+import Article from '../components/Article.jsx';
+import NextPage from '../components/NextPage.jsx';
 
 export default function DotNetCorePage(props){
     return(
