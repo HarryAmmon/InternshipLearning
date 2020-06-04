@@ -1,29 +1,39 @@
 import React from 'react';
 import PageHeader from '../components/PageHeader.js';
 import Card from '../components/Card.js';
+import Styles from './Content.module.scss';
+import Article from '../components/Article.js';
 
 const DocumentManagement = props => (
-    <div className="DocManPage">
+    <div>
         <PageHeader title="DocMan" subTitle="A lesson in refactoring" toggleNavBar={props.toggleNavBar} displayNav={props.displayNav} hideNavBar={props.hideNavBar}/>
         <hr/>
-        <Card>
-            <h1>Planning Day</h1>
-            <h2>A sense of scale</h2>
-            <p>some text</p><p>some different text</p>
-        </Card>
-        <Card>
-            <h1>SharePoint oAuth</h1>
-            <p>some more text</p><p>writing about the planning day</p>
-        </Card>
-        <Card>
-            <h1>Creating PoCs</h1>
-            <p>writing about proof of concepts</p>
-        </Card>
-        <Card>
-            <h1>Ways of working</h1>
-            <h2>Agile & Azure DevOps</h2>
-            <p>writing about agile</p><p>sprint planning','tracking tasks</p><p>daily scrum</p>
-        </Card>
+        <div className={Styles.root}>
+        
+            <Card>
+                <Article title="Planning Day" subTitle="A sense of scale">
+                    <p>Once every 3 sprints, the whole programme would meet to discuss and plan the next 3 sprints. It was a chance to plan user stories and tasks away from distractions in the office. We mapped dependencies between projects, completed team building exercises and drank cheap coffee.</p>
+                    <p></p>
+                </Article>
+            </Card>
+            <Card>
+                <Article title="SharePoint oAuth">
+                    <p>some more text</p>
+                    <p>writing about the planning day</p>
+                </Article>
+            </Card>
+            <Card>
+                <Article title="Creating PoCs'">
+                    <p>writing about proof of concepts</p>
+                </Article>
+            </Card>
+            <Card>
+                <Article title="Ways of working" subTitle="Agile & Azure DevOps">
+                    <p>This was my first time working on a project for TPR. The project was to be run following the Agile methodology. We had daily stand ups and completed sprint planning at the end of each sprint.</p>
+                    <p>This was also the first time using a Azure DevOps to manage tasks. Azure DevOps allows you as a team to create cards for the full Scrum hierarchy from Epics to Tasks. They can have time estimates and dependencies linked. Developers use this to track their work and completes a part of the CI process.</p>
+                </Article>
+            </Card>
+        </div>
     </div>
 );
 
