@@ -1,8 +1,8 @@
 import React from 'react';
 import { faGithub, faTwitter,} from '@fortawesome/free-brands-svg-icons'
-import Copyright from './Copyright.js';
+import Copyright from './Copyright.jsx';
 import Styles from './SiteFooter.module.scss';
-import SocialButton from './SocialButton.js';
+import SocialButton from './SocialButton.jsx';
 
 const date= new Date();
 

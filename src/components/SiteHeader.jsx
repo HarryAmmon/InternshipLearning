@@ -1,7 +1,7 @@
 import React from 'react';
 import Styles from './SiteHeader.module.scss';
-import MenuButton from './MenuButton';
-import NavBar from './NavBar';
+import MenuButton from './MenuButton.jsx';
+import NavBar from './NavBar.jsx';
 
 export default function Header(props){
     return(
