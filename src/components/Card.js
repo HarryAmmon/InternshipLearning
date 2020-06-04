@@ -3,8 +3,8 @@ import Styles from './Card.module.scss';
 
 export default function Card(props){
     return(
-        <article className={Styles.root}>
+        <div className={Styles.root}>
             {props.children}
-        </article>
+        </div>
     );
 }

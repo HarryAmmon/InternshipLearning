@@ -1,0 +1,20 @@
+@use 'colorPalette' as colors;
+
+.root{
+    display: flex;
+    flex-direction: column;
+    color: colors.$white;
+}
+
+.title{
+    font-size: 2rem;
+}
+
+.subTitle{
+    font-size: 1.5rem;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}

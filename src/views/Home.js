@@ -1,13 +1,25 @@
 import React from 'react';
 import Header from '../components/SiteHeader.js';
 import AboutMe from '../components/AboutMe.js';
+import Card from '../components/Card.js';
+import Styles from './Home.module.scss';
 
 const Home = props =>(
     <div className="homePage">
         <Header toggleNavBar={props.toggleNavBar} displayNav={props.displayNav} hideNavBar={props.hideNavBar}/>
         <hr/>
-        <div id="content">
+        <div className={Styles.root} id="content">
+            <Card>
+                <h3>Currently Learning</h3>
+                <ul>
+                    <li>React</li>
+                    <li>Jest</li>
+                    <li>SASS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </Card>
             <AboutMe />
+            
         </div>
     </div>
 );

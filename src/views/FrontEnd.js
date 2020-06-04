@@ -1,18 +1,20 @@
 import React from 'react';
 import PageHeader from '../components/PageHeader';
-import Card from '../components/Card.js'
-
+import Card from '../components/Card.js';
+import Styles from './Content.module.scss';
+import Article from '../components/Article';
 
 const FrontEnd = props => (
     <div className="frontEndPage">
         <PageHeader title="Front-end" subTitle="JavaScript, CSS & React" toggleNavBar={props.toggleNavBar} displayNav={props.displayNav} hideNavBar={props.hideNavBar}/>    
         <hr/>
-        <Card>
-            <h1>Starting from scratch</h1>
-            <h2>An intro to HTML & CSS</h2>
-            <p>some stuff about HTML5 elements</p>
-            <p>Some stuff about CSS</p>
-        </Card>
+        <div className={Styles.root}>
+            <Card>
+                <Article title="Starting from Scratch" subTitle="An intro to HTML & CSS">
+                    <p>During my first year at uni I completed a module called 'An Introduction to Web Development'. In this module I learnt about HTML5 tags, some simple CSS and JavaScript that allowed me to manipulate the DOM.</p>
+                </Article>
+            </Card>
+        </div>
     </div>
 );
 
