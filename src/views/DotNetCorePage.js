@@ -3,6 +3,7 @@ import PageHeader from '../components/PageHeader';
 import Card from '../components/Card.js';
 import Styles from './Content.module.scss';
 import Article from '../components/Article.js';
+import NextPage from '../components/NextPage';
 
 export default function DotNetCorePage(props){
     return(
@@ -20,6 +21,12 @@ export default function DotNetCorePage(props){
                 <Article title="Coding Kata" subTitle="Bowling">
                     <p>Coding katas are completed to help hone your programming skills. They are talked about by Robert Martin in 'The Clean Coder'.</p>
                     <p>I completed the Bowling Kata that can be found on my GitHub.</p>
+                </Article>
+            </Card>
+            <Card>
+                <Article title="Object Relation Mapper" subTitle="EF Core and Dapper">
+                    <p>As part of the Employee Pay Project I needed to implement an Object Relation Mapper (ORM) such as EF Core or Dapper. This would allow me to interact with a database that stored Employee information instead the information being stored in a JSON file.</p>
+                    <NextPage location="/DocMan" content="Document Management Programme"/>
                 </Article>
             </Card>
         </div>

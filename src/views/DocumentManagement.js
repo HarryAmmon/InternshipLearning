@@ -3,6 +3,7 @@ import PageHeader from '../components/PageHeader.js';
 import Card from '../components/Card.js';
 import Styles from './Content.module.scss';
 import Article from '../components/Article.js';
+import NextPage from '../components/NextPage.js';
 
 const DocumentManagement = props => (
     <div>
@@ -17,20 +18,10 @@ const DocumentManagement = props => (
                 </Article>
             </Card>
             <Card>
-                <Article title="SharePoint oAuth">
-                    <p>some more text</p>
-                    <p>writing about the planning day</p>
-                </Article>
-            </Card>
-            <Card>
-                <Article title="Creating PoCs'">
-                    <p>writing about proof of concepts</p>
-                </Article>
-            </Card>
-            <Card>
                 <Article title="Ways of working" subTitle="Agile & Azure DevOps">
                     <p>This was my first time working on a project for TPR. The project was to be run following the Agile methodology. We had daily stand ups and completed sprint planning at the end of each sprint.</p>
                     <p>This was also the first time using a Azure DevOps to manage tasks. Azure DevOps allows you as a team to create cards for the full Scrum hierarchy from Epics to Tasks. They can have time estimates and dependencies linked. Developers use this to track their work and completes a part of the CI process.</p>
+                    <NextPage location="/FrontEnd" content="Learning Front-end"/>
                 </Article>
             </Card>
         </div>
