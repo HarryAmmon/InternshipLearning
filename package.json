@@ -32,6 +32,8 @@
   "scripts": {
     "build": "webpack && cp ./_redirects ./build/_redirects && cp ./sitemap.xml ./build/sitemap.xml",
     "s": "webpack-dev-server",
-    "so": "webpack-dev-server --open"
+    "so": "webpack-dev-server --open",
+    "test": "jest",
+    "test-watch":"jest --watch" 
   }
 }
