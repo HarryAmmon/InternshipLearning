@@ -9,7 +9,7 @@ describe("The Site footer", () => {
                 <SiteFooter />
             )
             .toJSON();
-
-        console.log(tree);
+        
+        expect(tree).toMatchSnapshot();
     })
 })
