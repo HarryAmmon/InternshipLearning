@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Copyright component renderers correctly 1`] = `
+<small>
+  Copyright © 
+  2020
+   Harry Ammon
+</small>
+`;
