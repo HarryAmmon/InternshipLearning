@@ -17,9 +17,11 @@
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
+    "jest": "^26.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
+    "react-test-renderer": "^16.13.1",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
@@ -30,6 +32,18 @@
   "scripts": {
     "build": "webpack && cp ./_redirects ./build/_redirects && cp ./sitemap.xml ./build/sitemap.xml",
     "s": "webpack-dev-server",
-    "so": "webpack-dev-server --open"
+    "so": "webpack-dev-server --open",
+    "test": "jest",
+    "test-watch": "jest --watch"
+  },
+  "devDependencies": {
+    "identity-obj-proxy": "^3.0.0",
+    "prettier": "^2.0.5"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|scss)$": "identity-obj-proxy"
+    }
   }
 }
