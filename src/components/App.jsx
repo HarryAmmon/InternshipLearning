@@ -18,7 +18,7 @@ export default function App(){
 
     const HideNavbar = function(e){
         setShowNavBar(false);
-    }
+    };
 
     return(
         <div className={Styles.root} >     

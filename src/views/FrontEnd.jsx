@@ -19,6 +19,7 @@ const FrontEnd = props => (
             <Card>
                 <Article title="Big Picture" subTitle="Assume nothing">
                     <p>The first stop in my tour of web development is some big picture stuff.</p>
+                    <p>HTML is a markup language used to define the structure of web page. It use XML </p>
                 </Article>
             </Card>
         </div>
