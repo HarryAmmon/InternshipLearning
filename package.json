@@ -37,7 +37,8 @@
     "test-watch": "jest --watch"
   },
   "devDependencies": {
-    "identity-obj-proxy": "^3.0.0"
+    "identity-obj-proxy": "^3.0.0",
+    "prettier": "^2.0.5"
   },
   "jest": {
     "moduleNameMapper": {
