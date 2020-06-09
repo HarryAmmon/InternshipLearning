@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../components/SiteHeader.js';
-import AboutMe from '../components/AboutMe.js';
-import Card from '../components/Card.js';
+import Header from '../components/SiteHeader.jsx';
+import AboutMe from '../components/AboutMe.jsx';
+import Card from '../components/Card.jsx';
 import Styles from './Home.module.scss';
 
 const Home = props =>(

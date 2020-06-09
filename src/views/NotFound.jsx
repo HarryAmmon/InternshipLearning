@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import PageHeader from '../components/PageHeader';
-import Card from '../components/Card.js';
+import PageHeader from '../components/PageHeader.jsx';
+import Card from '../components/Card.jsx';
 import Styles from './Content.module.scss';
 
 const NotFound = props =>(
