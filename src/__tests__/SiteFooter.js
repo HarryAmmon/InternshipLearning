@@ -1,18 +1,13 @@
-import React from 'react';
+import React from "react";
 import SiteFooter from "../components/SiteFooter";
 import renderer from "react-test-renderer";
 
 describe("The Site footer", () => {
-    it("renderers as expected",() => {
-        const tree = renderer
-            .create(
-                <SiteFooter />
-            )
-            .toJSON();
-        
-        expect(tree).toMatchSnapshot();
-    })
-})    expect(tree).toMatchInlineSnapshot(`
+  it("renderers as expected", () => {
+    const tree = renderer
+      .create(<SiteFooter date={new Date(2000, 3, 10)} />)
+      .toJSON();
+    expect(tree).toMatchInlineSnapshot(`
       <footer
         className="root"
       >
