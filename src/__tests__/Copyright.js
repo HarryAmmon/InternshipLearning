@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Copyright from "../components/Copyright.js";
+import Copyright from "../components/Copyright";
 
 describe("Copyright component", () => {
   it("renderers correctly", () => {
