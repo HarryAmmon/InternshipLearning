@@ -17,10 +17,8 @@ export default function Code({ children }){
                     </div>
                 });
 
-                return(<pre>{lineArray}</pre>)
+                return(<pre className={Styles.preserve}>{lineArray}</pre>)
            } )}
         </code>
     )
 }
-
-

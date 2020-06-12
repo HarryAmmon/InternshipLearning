@@ -31,13 +31,17 @@ const FrontEnd = props => (
                     <p>This is some text and that should be shown inline</p>
                     <p>Here is some more text</p>
                     <Code>
-                        {`code needs to be shown 
-like this
-        there should be many lines
-        
-        
-        
-        itshouldnt matter how many lines I add`}</Code>
+                        {`<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="google-site-verification" content="O4au0pHD5ZLcg-UQ-kXIkXLAmlOoTCmrRtGfJCTf6qo" />
+        <title>Internship Learning</title>
+    </head>
+    <body style="margin: 0">
+        <div id="app"></div>
+    </body>
+</html>`}</Code>
                 </Article>
             </Card>
         </div>
