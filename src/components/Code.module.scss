@@ -1,0 +1,15 @@
+.root{
+    border: 2px solid red;
+    margin: 0;
+    padding: 0;
+}
+.line{
+    display: flex;
+    flex-direction: row;
+}
+.lineNumber{
+    border: 2px solid blue;
+}
+.code{
+    border: 2px solid green;
+}
