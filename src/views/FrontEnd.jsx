@@ -3,7 +3,7 @@ import PageHeader from '../components/PageHeader.jsx';
 import Card from '../components/Card.jsx';
 import Styles from './Content.module.scss';
 import Article from '../components/Article.jsx';
-import Code from '../components/Code.jsx';
+import CodeBlock from '../components/CodeBlock.jsx';
 
 const FrontEnd = props => (
     <div className="frontEndPage">
@@ -30,18 +30,9 @@ const FrontEnd = props => (
                 <Article title="HTML5">
                     <p>This is some text and that should be shown inline</p>
                     <p>Here is some more text</p>
-                    <Code>
-                        {`<!DOCTYPE html>
-<html lang="en-GB">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="google-site-verification" content="O4au0pHD5ZLcg-UQ-kXIkXLAmlOoTCmrRtGfJCTf6qo" />
-        <title>Internship Learning</title>
-    </head>
-    <body style="margin: 0">
-        <div id="app"></div>
-    </body>
-</html>`}</Code>
+                    <CodeBlock>
+                        {`<!DOCTYPE html>`}    
+                    </CodeBlock>
                 </Article>
             </Card>
         </div>

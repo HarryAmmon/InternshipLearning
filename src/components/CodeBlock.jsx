@@ -1,7 +1,7 @@
 import React from 'react';
-import Styles from './Code.module.scss';
+import Styles from './CodeBlock.module.scss';
 
-export default function Code({ children }){
+export default function CodeBlock({ children }){
     console.log(`Children number: ${React.Children.count(children)}`);
 
     return(
