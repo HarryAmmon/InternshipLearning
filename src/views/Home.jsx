@@ -16,6 +16,7 @@ const Home = props =>(
                     <li>Jest</li>
                     <li>SASS</li>
                     <li>JavaScript</li>
+                    <li>TypeScript</li>
                 </ul>
             </Card>
             <AboutMe />
