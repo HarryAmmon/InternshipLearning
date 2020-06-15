@@ -1,0 +1,8 @@
+@use '_colorPalette' as colors;
+
+.root{
+    background-color: colors.$code-background;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    margin: auto 0.1rem;
+}

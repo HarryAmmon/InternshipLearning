@@ -1,0 +1,29 @@
+@use '_colorPalette' as colors;
+
+.root{
+    border: 2px solid colors.$shadow;
+    border-radius: 0.5rem;
+    overflow-x: scroll;
+    background-color: colors.$code-background;
+    .preserve{
+        margin: 0;
+        margin-bottom: 0.6rem;
+        .line{ 
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            line-height: 1.6rem;
+            .lineNumber{
+                width: 1.6rem;
+                background-color: colors.$lineNumber-background;
+                position: absolute;
+                margin: 0;
+                padding: 5px;
+                text-align: right;
+            }
+            .code{             
+                margin: 0 2.6rem;
+            }
+        }
+    }
+}
