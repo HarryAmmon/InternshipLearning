@@ -4,6 +4,7 @@ import Card from '../components/Card.jsx';
 import Styles from './Content.module.scss';
 import Article from '../components/Article.jsx';
 import CodeBlock from '../components/CodeBlock.jsx';
+import CodeInline from '../components/CodeInline.jsx';
 
 const FrontEnd = props => (
     <div className="frontEndPage">
@@ -33,6 +34,7 @@ const FrontEnd = props => (
                     <CodeBlock>
                         {`<!DOCTYPE html>`}    
                     </CodeBlock>
+                    <p>This code should be shown <CodeInline>{`Inline`}</CodeInline></p>
                 </Article>
             </Card>
         </div>
