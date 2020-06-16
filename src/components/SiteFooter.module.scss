@@ -15,9 +15,16 @@ hr{
     a{
         color: colors.$white;
     }
+    @media(max-width: 500px){
+        flex-direction: column;
+    }
 }
 
 .socialMedia{
     display: flex;
     justify-content: space-around;
+    @media(max-width: 500px){
+        flex-direction: column;
+        order: -1;
+    }
 }
