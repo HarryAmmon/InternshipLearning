@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     color: colors.$white;
+    margin: 0;
 }
 
 .title{
@@ -17,8 +18,13 @@
 .main{
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
-.main p{
-    line-height: 1.5rem;
-}
+// .main p{
+//     line-height: 1.5rem;
+//     @media(max-width: 500px){
+//         font-size: 0.5rem;
+//         line-height: 0.7rem;
+//     }
+// }
