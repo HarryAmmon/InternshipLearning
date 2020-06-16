@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-right: 3rem;
+    
 }
 
 .title{
@@ -16,11 +16,18 @@
     color: colors.$white;
     size: 3rem;
     margin: 0.8rem 0;
+    @media (max-width: 500px){
+        align-self: center;
+    }
 }
 
 .subTitle{
     align-self: flex-end;
+    text-align: center;
     color: colors.$white;
     size: 2rem;
     margin: 0.8rem 0;
+    @media (max-width: 500px){
+        align-self: center;
+    }
 }
