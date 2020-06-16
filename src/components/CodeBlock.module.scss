@@ -7,22 +7,27 @@
     background-color: colors.$code-background;
     .preserve{
         margin: 0;
-        margin-bottom: 0.6rem;
         .line{ 
             display: flex;
             flex-direction: row;
             margin: 0;
             line-height: 1.6rem;
+            align-items: center;
             .lineNumber{
                 width: 1.6rem;
                 background-color: colors.$lineNumber-background;
                 position: absolute;
                 margin: 0;
-                padding: 5px;
                 text-align: right;
+                min-height: 1.55rem;
+                padding-right: 0.1rem
             }
-            .code{             
+            .code{          
                 margin: 0 2.6rem;
+                min-height: 1.55rem;
+                @media (max-width: 500px) {
+                    max-width: 0px;
+                }
             }
         }
     }

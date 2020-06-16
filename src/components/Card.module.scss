@@ -5,8 +5,8 @@
     margin: 0.9rem 0.9rem;
     padding: 10px;
     border-radius: 30px;
-    max-width: 850px;
     color: colors.$white;
+    max-width: 42rem;
     background-color: colors.$primary-color;
     * {
         margin: 0.6rem;;
@@ -26,4 +26,11 @@ p {
     line-height: 1.2rem;
     letter-spacing: 0.04rem;
     margin: 0.5rem;
+}
+
+@media (max-width: 500px){
+ .root{
+    max-width: 25rem;
+    border: 2px solid red;
+ }
 }
