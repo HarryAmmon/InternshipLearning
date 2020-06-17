@@ -9,15 +9,17 @@
 
 .title{
     font-size: 2rem;
+    margin-left: 0;
     @media(max-width: 500px){
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
 .subTitle{
     font-size: 1.5rem;
+    margin-left: 0;
     @media(max-width: 500px){
-        font-size: 0.5rem;
+        font-size: 1.2rem;
     }
 }
 

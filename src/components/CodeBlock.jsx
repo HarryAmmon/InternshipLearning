@@ -10,11 +10,19 @@ export default function CodeBlock({ children }){
                 let lineArray = child.split('\n');
 
                 lineArray.forEach((element,i) => {
+                    if (i === 0){
+                        lineArray[i] = 
+                            <div key={i} className={Styles.line}>
+                                <div className={Styles.firstLine}>{i + 1}</div>
+                                <div className={Styles.code}>{element}</div>
+                            </div>
+                    } else {
                     lineArray[i] = 
-                    <div key={i} className={Styles.line}>
-                        <div className={Styles.lineNumber}>{i + 1}</div>
-                        <div className={Styles.code}>{element}</div>
-                    </div>
+                        <div key={i} className={Styles.line}>
+                            <div className={Styles.lineNumber}>{i + 1}</div>
+                            <div className={Styles.code}>{element}</div>
+                        </div>
+                    }
                 });
 
                 return(<pre className={Styles.preserve}>{lineArray}</pre>)
