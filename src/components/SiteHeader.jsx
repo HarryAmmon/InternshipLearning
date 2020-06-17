@@ -11,6 +11,7 @@ export default function Header(props){
             <div>             
                 <h1>Internship Learning</h1>
                 <p className={Styles.subtitle}>Documenting my learning journey</p>
+                <p>From MobileStyling Branch</p>
             </div>
         </header>
         <hr/>
