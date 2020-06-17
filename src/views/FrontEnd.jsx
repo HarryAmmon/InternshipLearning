@@ -29,7 +29,7 @@ const FrontEnd = props => (
             </Card>
             <Card>
                 <Article title="HTML5">
-                    <p>This is some text and that should be shown inline</p>
+                    <p>This is some text and that should be shown inline. Adding some more text here to make sure it is full length</p>
                     <p>Here is some more text</p>
                     <CodeBlock>
                         {`<!DOCTYPE html>

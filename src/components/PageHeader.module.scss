@@ -1,14 +1,16 @@
 @use 'colorPalette' as colors;
 
 .root{
-    
     height: 12rem;
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+    margin-right: 1.5rem;
+    @media (max-width: 500px){
+        margin-right: 0;
+    }
 }
 
 .title{
