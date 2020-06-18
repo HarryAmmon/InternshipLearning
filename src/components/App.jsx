@@ -23,11 +23,11 @@ export default function App(){
     return(
         <div className={Styles.root} >     
             <Switch>
-                <Route path="/" exact component={() => <Home toggleNavBar={ToggleNavBar} displayNav={showNavBar} hideNavBar={HideNavbar}/>} />
-                <Route path="/DocMan" component={() => <DocumentManagement toggleNavBar={ToggleNavBar} displayNav={showNavBar} hideNavBar={HideNavbar}/>} />
-                <Route path="/FrontEnd" component={() => <FrontEnd toggleNavBar={ToggleNavBar} displayNav={showNavBar} hideNavBar={HideNavbar} />}/>
-                <Route path="/DotNetCore" component={() => <DotNetCore toggleNavBar={ToggleNavBar} displayNav={showNavBar} hideNavBar={HideNavbar} />}/>
-                <Route component={() => <NotFound toggleNavBar={ToggleNavBar} displayNav={showNavBar} hideNavBar={HideNavbar} />}/>    
+                <Route path="/" exact component={() => <Home />} />
+                <Route path="/DocMan" component={() => <DocumentManagement />} />
+                <Route path="/FrontEnd" component={() => <FrontEnd  />}/>
+                <Route path="/DotNetCore" component={() => <DotNetCore  />}/>
+                <Route component={() => <NotFound />}/>    
             </Switch>
             <Footer />
         </div>
