@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Styles from './PageHeader.module.scss';
 import MenuButton from './MenuButton.jsx';
-import NavBar from './NavBar.jsx';
+
 
 export default function PageHeader(props){
     return(
@@ -9,10 +9,9 @@ export default function PageHeader(props){
             <div className={Styles.root}>
                 <h1 className={Styles.title}>{props.title}</h1>
                 <h2 className={Styles.subTitle}>{props.subTitle}</h2>
-                <MenuButton onClick={props.toggleNavBar}/>
+                <MenuButton/>
             </div>
         <hr/>
-        <NavBar display={props.displayNav} hideNavBar={props.hideNavBar} />         
         </div>
     );
 }
