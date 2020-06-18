@@ -12,10 +12,10 @@ export default function NavBar(props){
     return(
     <nav className={display ? Styles.root : Styles.hidden} >
         <ul>
-            <li><Link to="/" onClick={props.hideNavBar}>About Me</Link></li>
-            <li><Link to="/DotNetCore" onClick={props.hideNavBar}>.NET Core</Link></li>
-            <li><Link to="/DocMan" onClick={props.hideNavBar}>Document Management</Link></li>
-            <li><Link to="/FrontEnd" onClick={props.hideNavBar}>Front-end</Link></li>
+            <li><Link to="/" onClick={setDisplay(false)}>About Me</Link></li>
+            <li><Link to="/DotNetCore" onClick={setDisplay(false)}>.NET Core</Link></li>
+            <li><Link to="/DocMan" onClick={setDisplay(false)}>Document Management</Link></li>
+            <li><Link to="/FrontEnd" onClick={setDisplay(false)}>Front-end</Link></li>
         </ul>
     </nav>
     );
