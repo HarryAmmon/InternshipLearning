@@ -8,14 +8,6 @@ export default function NavBar(){
     
     const [display, setDisplay] = useState(true);
 
-
-    useEffect(() => {
-        console.log(`NavBar mounted `);
-        return () => {
-            console.log(`Navbar unmounted `);
-        }
-    },[display]);
-
     return(
     <div>
         <nav className={display ? Styles.root : Styles.hidden} >
@@ -26,7 +18,7 @@ export default function NavBar(){
                 <li><Link to="/FrontEnd" onClick={() => setDisplay(false)}>Front-end</Link></li>
             </ul>
         </nav>
-        <button onClick={() => setDisplay(display ? false : true)}>Press me!</button>
+        <button onClick={() => setDisplay(state => !state)}>Press me!</button>
     </div>
     );
 }
