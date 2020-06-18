@@ -6,7 +6,7 @@ export default function Header(props){
     return(
         <div>
         <header className={Styles.root}>
-            <MenuButton onClick={props.toggleNavBar}/>
+            <MenuButton/>
             <div>             
                 <h1>Internship Learning</h1>
                 <p className={Styles.subtitle}>Documenting my learning journey</p>
