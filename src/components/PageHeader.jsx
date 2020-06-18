@@ -12,7 +12,7 @@ export default function PageHeader(props){
                 <MenuButton onClick={props.toggleNavBar}/>
             </div>
         <hr/>
-        <NavBar display={props.displayNav} hideNavBar={props.hideNavBar} />         
+        <NavBar />         
         </div>
     );
 }
