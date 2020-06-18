@@ -1,7 +1,6 @@
 import React from 'react';
 import Styles from './SiteHeader.module.scss';
 import MenuButton from './MenuButton.jsx';
-import NavBar from './NavBar.jsx';
 
 export default function Header(props){
     return(
@@ -14,7 +13,7 @@ export default function Header(props){
             </div>
         </header>
         <hr/>
-        <NavBar display={props.displayNav} hideNavBar={props.hideNavBar} />
+       
         </div>
     );
 }
