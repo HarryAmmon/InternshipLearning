@@ -6,6 +6,15 @@ import Article from '../components/Article.jsx';
 import CodeBlock from '../components/CodeBlock.jsx';
 import CodeInline from '../components/CodeInline.jsx';
 import { Link } from 'react-router-dom';
+import List from '../components/List.jsx';
+
+const MyCodeBlock = <CodeInline>This is a paragraph</CodeInline>
+
+const CodeInlineWithComment = (props) => (
+    <div><CodeInline>Some inline code</CodeInline>{props.comment}</div>
+)
+
+const Addition = (a,b) => a+b;
 
 const FrontEnd = props => (
     <div className="frontEndPage">
@@ -32,13 +41,15 @@ const FrontEnd = props => (
             </Card>
             <Card>
                 <Article title="HTML5">
-                    <p>HTML5 is the latest version of HTML. Released in 2015 it allows for more expressive markup of documents.</p>
+                    <p>HTML5 is the latest version of HTML. Released in 2015 it allows for more expressive markup of documents than previous versions.</p>
                     <p>HTML allows you to describe the structure of a website. It does this by having a variety of tags that describe their content.</p>
-                    <ul>
-                        <li><CodeInline>{`<p>This is a paragraph</p>`}</CodeInline> - Tells the browser that this is a paragraph </li>
-
-                    </ul>
-                    
+                    <List listItems={
+                        [
+                            <div><CodeInline>{`<p>This is a paragraph</p>`}</CodeInline> - Signals a paragraph</div>,
+                            <div><CodeInline>{`<h1>Title</h1>`}</CodeInline> - Signals a heading. You can use <CodeInline>{`<h1>`}</CodeInline> to <CodeInline>{`<h6>`}</CodeInline> to markup different sized headings</div>,
+                            <div><CodeInline>{`<body></body>`}</CodeInline> - All content to be presented to the user should appear within these tags</div>,
+                        ]
+                    }/> 
                     
                     <CodeBlock>
                         {`<!DOCTYPE html>
