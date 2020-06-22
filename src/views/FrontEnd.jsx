@@ -8,14 +8,6 @@ import CodeInline from '../components/CodeInline.jsx';
 import { Link } from 'react-router-dom';
 import List from '../components/List.jsx';
 
-const MyCodeBlock = <CodeInline>This is a paragraph</CodeInline>
-
-const CodeInlineWithComment = (props) => (
-    <div><CodeInline>Some inline code</CodeInline>{props.comment}</div>
-)
-
-const Addition = (a,b) => a+b;
-
 const FrontEnd = props => (
     <div className="frontEndPage">
         <PageHeader title="Front-end" subTitle="JavaScript, CSS & React" toggleNavBar={props.toggleNavBar} displayNav={props.displayNav} hideNavBar={props.hideNavBar}/>    
@@ -45,38 +37,55 @@ const FrontEnd = props => (
                     <p>HTML allows you to describe the structure of a website. It does this by having a variety of tags that describe their content.</p>
                     <List listItems={
                         [
-                            <div><CodeInline>{`<p>This is a paragraph</p>`}</CodeInline> - Signals a paragraph</div>,
-                            <div><CodeInline>{`<h1>Title</h1>`}</CodeInline> - Signals a heading. You can use <CodeInline>{`<h1>`}</CodeInline> to <CodeInline>{`<h6>`}</CodeInline> to markup different sized headings</div>,
-                            <div><CodeInline>{`<body></body>`}</CodeInline> - All content to be presented to the user should appear within these tags</div>,
+                            <div><CodeInline>{`<p>This is a paragraph</p>`}</CodeInline> - Defines a paragraph</div>,
+                            <div><CodeInline>{`<h1>Title</h1>`}</CodeInline> - Defines a heading. You can use <CodeInline>{`<h1>`}</CodeInline> to <CodeInline>{`<h6>`}</CodeInline> to markup different sized headings</div>,
+                            <div><CodeInline>{`<body></body>`}</CodeInline> - Defines the documents body. Content to be shown to the user should be placed inside these tags.</div>,
                         ]
-                    }/> 
+                    }/>
+                    <p>A complete list of tags can be found <a href="#">here</a>.</p>
+                    <p>Below is a template for a HTML document</p> 
                     
                     <CodeBlock>
                         {`<!DOCTYPE html>
-                        Adding many lines
-                        
-just to make sure that the lines render correctly
-just to make sure that the lines render correctly
-just to make sure that the lines render correctly
-just to make sure that the lines render correctly
-just to make sure that the lines render correctly
-        just to make sure that the lines render correctly
-            just to make sure that the lines render correctly to make sure that the lines render correctly to make sure that the lines render correctly to make sure that the lines render correctly
-                just to make sure that the lines render correctly
-                ust to make sure that the lines render correctly
-                ust to make sure that the lines render correctly
-                ust to make sure that the lines render correctly
-                ust to make sure that the lines render correctly
-
-                
-
-
-
-
-
-                        `}    
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css"/>
+        <title>Your Site Title</title>
+    </head>
+    <body>
+        <h1>Site Content</h1>
+    </body>
+    <script src="index.js"><script>
+</html>`}    
                     </CodeBlock>
-                    <p>This code should be shown <CodeInline>{`Inline`}</CodeInline></p>
+                    <List listItems={[
+                        <div>Line 1 is required to tell the browser that this is a HTML5 document.</div>,
+                        <div>Line 2 tells the browser that this is the root of the document and that the language to use is english.</div>,
+                        <div>The <CodeInline>{`<meta>`}</CodeInline> tags show that we should use the UTF-8 character set and there is some set up that allows us to use media queries in our CSS.</div>,
+                        <div><CodeInline>{`<title>`}</CodeInline> defines the title of your page. This is the text that is shown at the top of your web browser.</div>,
+                        <div>Line 12 adds a reference to a JavaScript document that we want to use.</div>
+                    ]}/>
+                    <p>HTML elements can be assigned ids and classes to help target them with your CSS and JavaScript. An element can have one id and multiple classes.</p>
+                    <List listItems={[
+                        <div><CodeInline>{`<p id="firstParagraph"></p>`}</CodeInline>- adds the id "firstParagraph"</div>,
+                        <div><CodeInline>{`<p class="articleContent"></p>`}</CodeInline>- adds the class "articleContent"</div>,
+                        <div><CodeInline>{`<p class="articleContent smallText`}</CodeInline>- adds both "articleContent" and "smallText" as classes</div>
+                    ]}/>
+                </Article>
+            </Card>
+            <Card>
+                <Article title="CSS">
+                    <p>CSS3 is the latest version of CSS and stands for Cascading Stylesheets. CSS uses selectors to target sections of the HTML document to change how they look. You can use selectors to target elements based on their class, id or element name.</p>
+                    <p>There are 3 ways to implement CSS in your document:</p>
+                    <h3 className={Styles.sectionHeader}>External CSS</h3>
+                    <p>Creating a <CodeInline>{`.CSS`}</CodeInline> file and adding a reference to it in your HTML document is the most common way of adding styling to your site. To do this ensure <CodeInline>{`<link rel="stylesheet" href="fileName.css"/>`}</CodeInline> is in the <CodeInline>{`<head>`}</CodeInline> section of your HTML document.</p>
+                    <h3 className={Styles.sectionHeader}>Internal CSS</h3>
+                    <p>To do this add a <CodeInline>{`<style></style>`}</CodeInline>tag within the <CodeInline>{`<head>`}</CodeInline> section. You can then write CSS like you would in an separate stylesheet within those <CodeInline>{`<style></style>`}</CodeInline> tags.</p>
+                    <h3 className={Styles.sectionHeader}>Inline CSS</h3>
+                    <p>Use the <CodeInline>{`style`}</CodeInline> attribute directly in the HTML element. This will add styling to this element only. e.g.<CodeInline>{`<h1 style="color:red;"`}</CodeInline></p>                  
+                    
                 </Article>
             </Card>
         </div>
