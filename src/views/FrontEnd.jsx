@@ -8,14 +8,6 @@ import CodeInline from '../components/CodeInline.jsx';
 import { Link } from 'react-router-dom';
 import List from '../components/List.jsx';
 
-const MyCodeBlock = <CodeInline>This is a paragraph</CodeInline>
-
-const CodeInlineWithComment = (props) => (
-    <div><CodeInline>Some inline code</CodeInline>{props.comment}</div>
-)
-
-const Addition = (a,b) => a+b;
-
 const FrontEnd = props => (
     <div className="frontEndPage">
         <PageHeader title="Front-end" subTitle="JavaScript, CSS & React" toggleNavBar={props.toggleNavBar} displayNav={props.displayNav} hideNavBar={props.hideNavBar}/>    
