@@ -75,11 +75,25 @@ const FrontEnd = props => (
                         <div><CodeInline>{`<title>`}</CodeInline> defines the title of your page. This is the text that is shown at the top of your web browser.</div>,
                         <div>Line 12 adds a reference to a JavaScript document that we want to use.</div>
                     ]}/>
+                    <p>HTML elements can be assigned ids and classes to help target them with your CSS and JavaScript. An element can have one id and multiple classes.</p>
+                    <List listItems={[
+                        <div><CodeInline>{`<p id="firstParagraph"></p>`}</CodeInline>- adds the id "firstParagraph"</div>,
+                        <div><CodeInline>{`<p class="articleContent"></p>`}</CodeInline>- adds the class "articleContent"</div>,
+                        <div><CodeInline>{`<p class="articleContent smallText`}</CodeInline>- adds both "articleContent" and "smallText" as classes</div>
+                    ]}/>
                 </Article>
             </Card>
             <Card>
                 <Article title="CSS">
-                    <p>CSS3 is the latest version of CSS. CSS uses selectors to target sections of the HTML document to change how they look.</p>
+                    <p>CSS3 is the latest version of CSS and stands for Cascading Stylesheets. CSS uses selectors to target sections of the HTML document to change how they look. You can use selectors to target elements based on their class, id or element name.</p>
+                    <p>There are 3 ways to implement CSS in your document:</p>
+                    <h3 className={Styles.sectionHeader}>External CSS</h3>
+                    <p>Creating a <CodeInline>{`.CSS`}</CodeInline> file and adding a reference to it in your HTML document is the most common way of adding styling to your site. To do this ensure <CodeInline>{`<link rel="stylesheet" href="fileName.css"/>`}</CodeInline> is in the <CodeInline>{`<head>`}</CodeInline> section of your HTML document.</p>
+                    <h3 className={Styles.sectionHeader}>Internal CSS</h3>
+                    <p>To do this add a <CodeInline>{`<style></style>`}</CodeInline>tag within the <CodeInline>{`<head>`}</CodeInline> section. You can then write CSS like you would in an separate stylesheet within those <CodeInline>{`<style></style>`}</CodeInline> tags.</p>
+                    <h3 className={Styles.sectionHeader}>Inline CSS</h3>
+                    <p>Use the <CodeInline>{`style`}</CodeInline> attribute directly in the HTML element. This will add styling to this element only. e.g.<CodeInline>{`<h1 style="color:red;"`}</CodeInline></p>                  
+                    
                 </Article>
             </Card>
         </div>
