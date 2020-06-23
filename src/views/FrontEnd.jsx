@@ -116,12 +116,14 @@ const FrontEnd = props => (
             </Card>
             <Card>
                 <Article title="React">
-                    <p>React is a JavaScript library for building interactive user interfaces. React breaks up user interfaces into reusable components.</p>
+                    <p>React is a JavaScript library for building interactive user interfaces. React breaks up user interfaces into reusable components that manage their own state. They can then be combined to create user interfaces.</p>
+                    <p>This site is written with React and was used as a sandbox to help me learn React. There are examples of functional components, JSX, React Hooks such as useState and useContext and React Router through out this site.</p>
                 </Article>
             </Card>
             <Card>
                 <Article title="Webpack">
                     <p>Webpack is a static module bundler for JavaScript applications. It maps dependencies between every module of your component and generates a bundle.</p>
+                    <p>Webpack is configured in a <CodeInline>webpack.config.js</CodeInline> file that allows you to specify the entry point, the output point, loaders and plugins to use and browser compatibility. Loaders tells webpack how to handle certain dependencies.</p>
                 </Article>
             </Card>
             <Card>
