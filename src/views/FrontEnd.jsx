@@ -86,24 +86,44 @@ const FrontEnd = props => (
                     <p>To do this add a <CodeInline>{`<style></style>`}</CodeInline>tag within the <CodeInline>{`<head>`}</CodeInline> section. You can then write CSS like you would in an separate stylesheet within those <CodeInline>{`<style></style>`}</CodeInline> tags.</p>
                     <h3 className={Styles.sectionHeader}>Inline CSS</h3>
                     <p>Use the <CodeInline>{`style`}</CodeInline> attribute directly in the HTML element. This will add styling to this element only. e.g.<CodeInline>{`<h1 style="color:red;"`}</CodeInline></p>
-                    <ExternalLink link="https://css-tricks.com/how-css-selectors-work/">Guide to CSS Selectors</ExternalLink>
+                    <p><ExternalLink link="https://css-tricks.com/how-css-selectors-work/">Guide to CSS Selectors</ExternalLink></p>
                 </Article>
             </Card>
             <Card>
                 <Article title="Flexbox" subTitle="Centering Content">
                     <p>Flexbox is a CSS layout model. It allows elements within its container to be responsive by automatically arranging them based on the size of the container. This can change based on screen size. It is also a great way to easily centre content.</p>
-                    <p>The game <ExternalLink link="https://flexboxfroggy.com/">Flexbox Froggy-</ExternalLink> is a great way to learn how Flexbox.</p>
-                    <p>To create a container, using CSS select an element that you want </p>
+                    <p>The game <ExternalLink link="https://flexboxfroggy.com/">Flexbox Froggy</ExternalLink> - is a great way to learn how Flexbox.</p>
+                    <p>To create a flex container, use CSS to select the element that you want to act as a container, it should have the elements you wish to control the position of as children. Then set the display attribute to <CodeInline>flex</CodeInline>. See below for an example.</p>
+                    <CodeBlock>{`.container{
+    display: flex;
+}`}
+                    </CodeBlock>
+                    <p>The children of the flex container are called flex items.</p>
+                    <h3 class={Styles.sectionHeader}>Flex Container properties</h3>
+                    <List listItems={[
+                        <div><CodeInline>display: flex | inline-flex</CodeInline> - creates either a block flex box or an inline flexbox</div>,
+                        <div><CodeInline>flex-direction: column | row | column-reverse | row-reverse</CodeInline> - defines the main axis of the flexbox. Default is row</div>,
+                        <div><CodeInline>justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly</CodeInline> - aligns content along the main axis</div>,
+                        <div><CodeInline>align-items: flex-start | flex-end | center | stretch | baseline</CodeInline> </div>,
+                    ]}/>
+                    <h3 class={Styles.sectionHeader}>Flex Items properties</h3>
+                    <List listItems={[
+                        <div><CodeInline>align-self: flex-start | flex-end | center </CodeInline> - allows for individual elements to override their position in the flexbox</div>,
+                        <div><CodeInline>order: -1</CodeInline> - allows for individual elements to change their own position relative to other elements in the flexbox</div>
+                    ]}/>
+                    <p>A more comprehensive list can be found at <ExternalLink link={`https://css-tricks.com/snippets/css/a-guide-to-flexbox/`}>css-tricks</ExternalLink>.</p>
                 </Article>
             </Card>
             <Card>
                 <Article title="React">
-
+                    <p>React is a JavaScript library for building interactive user interfaces. React breaks up user interfaces into reusable components that manage their own state. They can then be combined to create user interfaces.</p>
+                    <p>This site is written with React and was used as a sandbox to help me learn React. There are examples of functional components, JSX, React Hooks such as useState and useContext and React Router through out this site.</p>
                 </Article>
             </Card>
             <Card>
                 <Article title="Webpack">
-
+                    <p>Webpack is a static module bundler for JavaScript applications. It maps dependencies between every module of your component and generates a bundle.</p>
+                    <p>Webpack is configured in a <CodeInline>webpack.config.js</CodeInline> file that allows you to specify the entry point, the output point, loaders and plugins to use and browser compatibility. Loaders tells webpack how to handle certain dependencies.</p>
                 </Article>
             </Card>
             <Card>
