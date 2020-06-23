@@ -7,6 +7,7 @@ import CodeBlock from '../components/CodeBlock.jsx';
 import CodeInline from '../components/CodeInline.jsx';
 import { Link } from 'react-router-dom';
 import List from '../components/List.jsx';
+import ExternalLink from '../components/ExternalLink.jsx';
 
 const FrontEnd = props => (
     <div className="frontEndPage">
@@ -16,7 +17,7 @@ const FrontEnd = props => (
             <Card>
                 <Article title="Starting from Scratch">
                     <p>During my first year of university I learnt about the basics of web development. I learnt about HTML5 tags, some simple CSS and touched on JavaScript that allowed us to manipulated the Document-Object-Model (DOM).</p>
-                    <p>I completed 2 assessments. The first was to create a static site, to demonstrate what I knew about HTML5 and CSS. The site was designed to be responsive and used media queries to achieve this. Whilst the site was functional it was developed in quite an old fashion way. Check it out on my <a href={`https://github.com/HarryAmmon/responsiveWebsite/`}>GitHub</a></p>
+                    <p>I completed 2 assessments. The first was to create a static site, to demonstrate what I knew about HTML5 and CSS. The site was designed to be responsive and used media queries to achieve this. Whilst the site was functional it was developed in quite an old fashion way. Check it out on my <ExternalLink link={`https://github.com/HarryAmmon/responsiveWebsite/`}>GitHub</ExternalLink></p>
                     <p>The second was an exam where I was tasked with manipulating the DOM using JavaScript. This included tasks such as changing the class of an element, adding functionality to buttons and event handling.</p>
                     <p>Whilst I gained a good understanding of the basics of web development, I did not learn much about modern web development techniques. For me to remove old web development habits and to ensure no gaps in my knowledge, I am starting from square one and assuming no knowledge about web development.</p>
                     <p>There is lots to learn.</p>
@@ -42,7 +43,7 @@ const FrontEnd = props => (
                             <div><CodeInline>{`<body></body>`}</CodeInline> - Defines the documents body. Content to be shown to the user should be placed inside these tags.</div>,
                         ]
                     }/>
-                    <p>A complete list of tags can be found <a href="#">here</a>.</p>
+                    <p>A complete list of tags can be found <ExternalLink link="https://www.w3schools.com/TAGS/default.ASP">here</ExternalLink>.</p>
                     <p>Below is a template for a HTML document</p> 
                     
                     <CodeBlock>
@@ -84,8 +85,30 @@ const FrontEnd = props => (
                     <h3 className={Styles.sectionHeader}>Internal CSS</h3>
                     <p>To do this add a <CodeInline>{`<style></style>`}</CodeInline>tag within the <CodeInline>{`<head>`}</CodeInline> section. You can then write CSS like you would in an separate stylesheet within those <CodeInline>{`<style></style>`}</CodeInline> tags.</p>
                     <h3 className={Styles.sectionHeader}>Inline CSS</h3>
-                    <p>Use the <CodeInline>{`style`}</CodeInline> attribute directly in the HTML element. This will add styling to this element only. e.g.<CodeInline>{`<h1 style="color:red;"`}</CodeInline></p>                  
-                    
+                    <p>Use the <CodeInline>{`style`}</CodeInline> attribute directly in the HTML element. This will add styling to this element only. e.g.<CodeInline>{`<h1 style="color:red;"`}</CodeInline></p>
+                    <ExternalLink link="https://css-tricks.com/how-css-selectors-work/">Guide to CSS Selectors</ExternalLink>
+                </Article>
+            </Card>
+            <Card>
+                <Article title="Flexbox" subTitle="Centering Content">
+                    <p>Flexbox is a CSS layout model. It allows elements within its container to be responsive by automatically arranging them based on the size of the container. This can change based on screen size. It is also a great way to easily centre content.</p>
+                    <p>The game <ExternalLink link="https://flexboxfroggy.com/">Flexbox Froggy-</ExternalLink> is a great way to learn how Flexbox.</p>
+                    <p>To create a container, using CSS select an element that you want </p>
+                </Article>
+            </Card>
+            <Card>
+                <Article title="React">
+
+                </Article>
+            </Card>
+            <Card>
+                <Article title="Webpack">
+
+                </Article>
+            </Card>
+            <Card>
+                <Article title="Jest">
+
                 </Article>
             </Card>
         </div>

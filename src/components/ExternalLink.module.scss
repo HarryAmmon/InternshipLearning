@@ -1,0 +1,6 @@
+@use '_colorPalette' as colors;
+
+.root{
+    margin: auto 0;
+    color: colors.$white;
+}
