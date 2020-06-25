@@ -24,6 +24,36 @@ export default function DotNetCorePage(props){
                 </Article>
             </Card>
             <Card>
+                <Article title="Employee Pay Solution">
+
+                </Article>
+            </Card>
+            <Card>
+                <Article title="Interfaces">
+                    
+                </Article>
+            </Card>
+            <Card>
+                <Article title="Testing">
+
+                </Article>
+            </Card>
+            <Card>
+                <Article title="Console App">
+
+                </Article>
+            </Card>
+            <Card>
+                <Article title="Web API">
+
+                </Article>
+            </Card>
+            <Card>
+                <Article title="MVC App">
+
+                </Article>
+            </Card>
+            <Card>
                 <Article title="Object Relation Mapper" subTitle="EF Core and Dapper">
                     <p>As part of the Employee Pay Project I needed to implement an Object Relation Mapper (ORM) such as EF Core or Dapper. This would allow me to interact with a database that stored Employee information instead the information being stored in a JSON file.</p>
                     <NextPage location="/DocMan" content="Document Management Programme"/>
