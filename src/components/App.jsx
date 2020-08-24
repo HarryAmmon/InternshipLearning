@@ -19,8 +19,8 @@ export default function App(){
                 <Switch>
                     <Route path="/" exact component={() => <Home />} />
                     <Route path="/DocMan" component={() => <DocumentManagement />} />
-                    <Route path="/FrontEnd" component={() => <FrontEnd  />}/>
-                    <Route path="/DotNetCore" component={() => <DotNetCore  />}/>
+                    <Route path="/FrontEnd" component={() => <FrontEnd />}/>
+                    <Route path="/DotNetCore" component={() => <DotNetCore />}/>
                     <Route component={() => <NotFound />}/>    
                 </Switch>
                 <Footer />

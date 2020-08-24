@@ -24,6 +24,31 @@ const DocumentManagement = props => (
                     <NextPage location="/FrontEnd" content="Learning Front-end"/>
                 </Article>
             </Card>
+            <Card>
+                <Article title="Database challenges">
+
+                </Article>
+            </Card>
+            <Card>
+                <Article title="Doing the oAuth Dance">
+
+                </Article>
+            </Card>
+            <Card>
+                <Article title="SharePoint CSOM API">
+
+                </Article>
+            </Card>
+            <Card>
+                <Article title="Refactoring">
+
+                </Article>
+            </Card>
+            <Card>
+                <Article title="Leaving the workstream">
+                    
+                </Article>
+            </Card>
         </div>
     </div>
 );

@@ -128,7 +128,8 @@ const FrontEnd = props => (
             </Card>
             <Card>
                 <Article title="Jest">
-
+		<p>Jest is a JavaScript testing framework</p>			
+			
                 </Article>
             </Card>
         </div>
