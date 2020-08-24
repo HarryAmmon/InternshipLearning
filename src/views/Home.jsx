@@ -11,9 +11,15 @@ const Home = props =>(
         <hr/>
         <div className={Styles.root} id="content">
             <Card>
-                <h3>Currently Learning</h3>
+                <h3>I gained experience in:</h3>
                 <List listItems={
                     [
+                        'C#',
+                        '.NET Core WEB API and MVC',
+                        'SQL',
+                        'SharePoint',
+                        'Test Driven Development',
+                        'XUnit and Moq',
                         'React',
                         'Jest',
                         'SASS',
@@ -22,7 +28,7 @@ const Home = props =>(
                     ]
                 }/>
             </Card>
-            <AboutMe />
+        <AboutMe />
             
         </div>
     </div>
