@@ -1,43 +1,43 @@
 @use 'colorPalette' as colors;
 
-.root{
-    box-shadow: 0 0 10px colors.$shadow;
-    margin: 0.9rem 0.9rem;
-    padding: 10px;
-    border-radius: 30px;
-    color: colors.$white;
-    max-width: 42rem;
-    background-color: colors.$primary-color;
-    * {
-        margin: 0.6rem;;
-    }
+.root {
+  box-shadow: 0 0 10px colors.$shadow;
+  margin: 0.9rem 0.9rem;
+  padding: 10px;
+  border-radius: 30px;
+  color: colors.$white;
+  max-width: 42rem;
+  background-color: colors.$primary-color;
+  * {
+    margin: 0.6rem;
+  }
 }
 
-.title{
-    font-size: 3rem;
+.title {
+  font-size: 3rem;
 }
 
-.subTitle{
-    font-size: 2rem;
+.subTitle {
+  font-size: 2rem;
 }
 
-p {
-    font-size: 1.2rem;
-    line-height: 1.4rem;
-    letter-spacing: 0.05rem;
-    margin: 0.5rem;
-    @media(max-width:500px){
-        line-height: 1.2rem;
-        font-size: 1rem;
-        margin: 0.7rem 0.3rem;
-    }
-}
+// p {
+//     font-size: 1.2rem;
+//     line-height: 1.4rem;
+//     letter-spacing: 0.05rem;
+//     margin: 0.5rem;
+//     @media(max-width:500px){
+//         line-height: 1.2rem;
+//         font-size: 1rem;
+//         margin: 0.7rem 0.3rem;
+//     }
+// }
 
-@media (max-width: 500px){
- .root{
+@media (max-width: 500px) {
+  .root {
     max-width: 29rem;
     margin: 0.7rem 0.2rem;
     padding: 0.2rem;
     border-radius: 4px;
- }
+  }
 }

@@ -1,37 +1,36 @@
 @use 'colorPalette' as colors;
 
-.root{
-    height: 12rem;
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-right: 1.5rem;
-    @media (max-width: 500px){
-        margin-right: 0;
-    }
+.root {
+  display: flex;
+  flex-grow: 2;
+  max-width: 45rem;
+  width: 100%;
+  justify-content: space-between;
+  @media (max-width: 500px) {
+  }
 }
 
-.title{
-    align-self: flex-end;
-    color: colors.$white;
-    size: 3rem;
-    margin: 0.8rem 0;
-    @media (max-width: 500px){
-        align-self: center;
-        size: 2rem;
-    }
-}
-
-.subTitle{
-    align-self: flex-end;
-    text-align: center;
-    color: colors.$white;
+.title {
+  color: colors.$white;
+  size: 3rem;
+  margin: 0.8rem 0;
+  @media (max-width: 500px) {
+    align-self: center;
     size: 2rem;
-    margin: 0.8rem 0;
-    @media (max-width: 500px){
-        align-self: center;
-        size: 1rem;
-    }
+  }
+}
+
+.subTitle {
+  color: colors.$white;
+  size: 2rem;
+  margin: 0.8rem 0;
+  @media (max-width: 500px) {
+    align-self: center;
+    size: 1rem;
+  }
+}
+
+.menuButton {
+  align-self: flex-end;
+  margin: 0.8rem 0.8rem;
 }

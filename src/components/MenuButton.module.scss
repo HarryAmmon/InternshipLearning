@@ -1,20 +1,37 @@
 @use 'colorPalette' as colors;
 
-.root{
-    align-self: flex-end;
-    order: 1;
-    padding: 0.4rem 1rem;
-    border-radius: 10px;
-    background-color: transparent;
-    border: 2px solid colors.$white;
-    font-size: 1rem;
-    color: colors.$white;
-    @media(max-width: 500px){
-        align-self: center;
-    }
+.root {
+  padding: 0 1rem;
+  border-radius: 6px;
+  background-color: transparent;
+  border: 2px solid colors.$white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  height: 2.5rem;
+  color: colors.$white;
+  @media (max-width: 500px) {
+    font-weight: 500;
+  }
 }
 
-.root:hover{
-    border-color: colors.$tertiary-color;
-    color: colors.$tertiary-color;
+.small {
+  height: 2rem;
+  margin: 1.5rem;
+  font-size: 0.75rem;
+  border-radius: 5px;
+}
+
+.large {
+  height: 6rem;
+  margin: 5rem;
+  padding: 0.5rem 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+  @media (max-width: 500px) {
+    font-size: 2rem;
+  }
+}
+.root:hover {
+  border-color: colors.$tertiary-color;
+  color: colors.$tertiary-color;
 }

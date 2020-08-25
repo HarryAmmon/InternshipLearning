@@ -1,31 +1,26 @@
 @use '_colorPalette' as colors;
 
-hr{
-    border: 2px solid colors.$tertiary-color;
-    margin: 0;
-}
-
-.footerContent{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: colors.$quaternary-color;
-    padding: 2rem;
+.footerContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: colors.$quaternary-color;
+  padding: 2rem;
+  color: colors.$white;
+  a {
     color: colors.$white;
-    a{
-        color: colors.$white;
-    }
-    @media(max-width: 500px){
-        flex-direction: column;
-        text-align: center;
-    }
+  }
+  @media (max-width: 500px) {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
-.socialMedia{
-    display: flex;
-    justify-content: space-around;
-    @media(max-width: 500px){
-        flex-direction: column;
-        order: -1;
-    }
+.socialMedia {
+  display: flex;
+  justify-content: space-around;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    order: -1;
+  }
 }
