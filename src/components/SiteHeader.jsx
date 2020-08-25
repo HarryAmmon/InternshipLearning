@@ -1,19 +1,27 @@
-import React from 'react';
-import Styles from './SiteHeader.module.scss';
-import MenuButton from './MenuButton.jsx';
+import React from "react";
+import Styles from "./SiteHeader.module.scss";
+import MenuButton from "./MenuButton.jsx";
+import { useHistory } from "react-router-dom";
+import { P } from "../components/Typography/Typography.jsx";
 
-export default function Header(props){
-    return(
+const SiteHeader = (props) => {
+  const history = useHistory();
+  return (
+    <div>
+      <header className={Styles.root}>
         <div>
-        <header className={Styles.root}>
-            <MenuButton/>
-            <div>             
-                <h1>Internship Learning</h1>
-                <p className={Styles.subtitle}>Documenting my learning journey</p>
-            </div>
-        </header>
-        <hr/>
-       
+          <h1>Internship Learning</h1>
+          <P>Documenting my learning journey</P>
         </div>
-    );
-}
+        <MenuButton
+          title="Start Journey"
+          onClick={() => history.push("/DotNetCore")}
+          size="medium"
+        />
+      </header>
+      <hr />
+    </div>
+  );
+};
+
+export default SiteHeader;

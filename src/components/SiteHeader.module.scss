@@ -10,19 +10,19 @@
     background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: space-evenly;
+    align-items: center;
     color: colors.$white;
 }
 
 .root h1{
+    text-align: center;
     margin: 5rem 2rem;
     font-size: 3rem;
-    text-align: right;
 }
 
 .root p{
+    text-align: center;
     margin: 5rem 2rem;
     font-size: 2rem;
-    text-align: right;
 }
