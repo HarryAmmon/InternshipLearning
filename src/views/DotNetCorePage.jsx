@@ -5,7 +5,7 @@ import Styles from "./Content.module.scss";
 import Article from "../components/Article.jsx";
 import NextPage from "../components/NextPage.jsx";
 import NavBar from "../components/NavBar.jsx";
-import { Hr } from "../components/Typography/Typography.jsx";
+import { Hr, P } from "../components/Typography/Typography.jsx";
 
 export default function DotNetCorePage(props) {
   return (
@@ -16,20 +16,20 @@ export default function DotNetCorePage(props) {
       <Hr />
       <Card>
         <Article title="Introduced to C#" subTitle="August 2019">
-          <p>
+          <P>
             talking about .NET Core. Adding some more text to ensure that the
             width is correct, probably going to change the width
-          </p>
-          <p>say about what different to .NET Framework</p>
+          </P>
+          <P>say about what different to .NET Framework</P>
         </Article>
       </Card>
       <Card>
         <Article title="Coding Kata" subTitle="Bowling">
-          <p>
+          <P>
             Coding katas are completed to help hone your programming skills.
             They are talked about by Robert Martin in 'The Clean Coder'.
-          </p>
-          <p>I completed the Bowling Kata that can be found on my GitHub.</p>
+          </P>
+          <P>I completed the Bowling Kata that can be found on my GitHub.</P>
         </Article>
       </Card>
       <Card>
@@ -52,12 +52,12 @@ export default function DotNetCorePage(props) {
       </Card>
       <Card>
         <Article title="Object Relation Mapper" subTitle="EF Core and Dapper">
-          <p>
+          <P>
             As part of the Employee Pay Project I needed to implement an Object
             Relation Mapper (ORM) such as EF Core or Dapper. This would allow me
             to interact with a database that stored Employee information instead
             the information being stored in a JSON file.
-          </p>
+          </P>
           <NextPage
             location="/DocMan"
             content="Document Management Programme"
