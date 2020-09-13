@@ -10,10 +10,10 @@
   }
 }
 
-.title {
+.titles {
   color: colors.$white;
-  size: 3rem;
-  margin: 0.8rem 0;
+  margin: 0.8rem 0.8rem;
+  max-width: 20rem;
   @media (max-width: 500px) {
     align-self: center;
     size: 2rem;

@@ -21,18 +21,6 @@
   font-size: 2rem;
 }
 
-// p {
-//     font-size: 1.2rem;
-//     line-height: 1.4rem;
-//     letter-spacing: 0.05rem;
-//     margin: 0.5rem;
-//     @media(max-width:500px){
-//         line-height: 1.2rem;
-//         font-size: 1rem;
-//         margin: 0.7rem 0.3rem;
-//     }
-// }
-
 @media (max-width: 500px) {
   .root {
     max-width: 29rem;

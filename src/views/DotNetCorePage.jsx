@@ -15,7 +15,7 @@ export default function DotNetCorePage(props) {
       <NavBar />
       <Hr />
       <Card>
-        <Article title="An intro to .NET Core">
+        <Article title="Introduced to C#" subTitle="August 2019">
           <p>
             talking about .NET Core. Adding some more text to ensure that the
             width is correct, probably going to change the width

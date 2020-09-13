@@ -4,14 +4,15 @@ import AboutMe from "../components/AboutMe.jsx";
 import Card from "../components/Card.jsx";
 import Styles from "./Home.module.scss";
 import List from "../components/List.jsx";
+import { Hr } from "../components/Typography/Typography.jsx";
 
 const Home = (props) => (
   <div className="homePage">
     <Header />
-    <hr />
+    <Hr />
     <div className={Styles.root} id="content">
       <Card>
-        <h3>Experienced in:</h3>
+        <h3>Gained experience in:</h3>
         <List
           listItems={[
             "C#",

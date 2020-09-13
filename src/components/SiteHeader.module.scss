@@ -1,28 +1,22 @@
 @use '_colorPalette' as colors;
 
-.root{
-    background-color: colors.$primary-color;
-    background-image: url(../images/headerBackground.jpg);
-    height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    color: colors.$white;
+.root {
+  background-color: colors.$primary-color;
+  background-image: url(../images/headerBackground.jpg);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: colors.$white;
 }
 
-.root h1{
-    text-align: center;
-    margin: 5rem 2rem;
-    font-size: 3rem;
-}
-
-.root p{
-    text-align: center;
-    margin: 5rem 2rem;
-    font-size: 2rem;
+.titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

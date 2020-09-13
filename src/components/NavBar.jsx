@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Styles from "./NavBar.module.scss";
+import AppContext from "./AppContext.jsx";
 
 export default function NavBar() {
+  const context = useContext(AppContext);
+  const [visible, setVisible] = context.displayNavigation;
+
   return (
-    <div className={Styles.root}>
+    <div className={visible ? Styles.root : Styles.hidden}>
       <nav>
         <ul>
           <li>
